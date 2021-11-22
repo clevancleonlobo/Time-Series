@@ -8,7 +8,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2) # Data visualization
 library(readr) # CSV file I/O, e.g. the read_csv function
-system("ls ../Downloads")
+
 demonetization_tweets <- read_csv("C:/Users/CLEVAN/Desktop/demonetization-tweets.csv",
     col_types = cols(id = col_character(), 
         replyToSID = col_character()))
